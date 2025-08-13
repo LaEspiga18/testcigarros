@@ -21,7 +21,7 @@
         <small>9/día → los no fumados pasan a la hucha semanal. Lunes 00:00 se reinicia la hucha.</small>
       </div>
       <div class="row" style="justify-content:end;gap:8px">
-        <button id="install" class="btn install" style="display:none">Instalar</button>
+        <button id="install" class="btn install" style="display:none" type="button">Instalar</button>
       </div>
     </div>
 
@@ -44,25 +44,12 @@
         <progress id="bar" value="0" max="100"></progress>
       </div>
       <div class="row" style="margin-top:12px">
-        <button id="minus" class="btn ghost">−1</button>
-        <button id="plus" class="btn">+1</button>
+        <button id="minus" class="btn ghost" type="button">−1</button>
+        <button id="plus" class="btn" type="button">+1</button>
       </div>
       <div class="row" style="margin-top:10px">
-        <button id="closeDay" class="btn ghost">Cerrar día ahora</button>
-        <button id="resetWeek" class="btn ghost">Vaciar hucha (forzar)</button>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="row" style="align-items:center">
-        <div>
-          <div>Hucha semanal</div>
-          <div id="bank" class="big">0</div>
-        </div>
-        <div>
-          <div class="badge"><span>Reinicio diario en</span> <span id="dayTimer" class="timer">00:00:00</span></div>
-          <div class="badge" style="margin-top:8px"><span>Reinicio semanal en</span> <span id="weekTimer" class="timer">00:00:00</span></div>
-        </div>
+        <button id="closeDay" class="btn ghost" type="button">Cerrar día ahora</button>
+        <button id="resetWeek" class="btn ghost" type="button">Vaciar hucha (forzar)</button>
       </div>
     </div>
 
@@ -73,7 +60,7 @@
           <input id="quotaInput" type="number" min="1" max="99" value="9"/>
         </div>
         <div style="align-self:end;display:flex;justify-content:flex-end">
-          <button id="saveCfg" class="btn">Guardar</button>
+          <button id="saveCfg" class="btn" type="button">Guardar</button>
         </div>
       </div>
       <small>Nota: la hucha se resetea automáticamente cuando cambia la semana (lunes 00:00). El traspaso diario se hace al llegar las 00:00 o al pulsar “Cerrar día ahora”.</small>
