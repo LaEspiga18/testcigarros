@@ -17,3 +17,5 @@ progress{width:100%}
 footer{text-align:center;color:var(--muted);font-size:12px}
 .install{margin-left:auto}
 .timer{font-variant-numeric:tabular-nums}
+.ok{color:#10b981}
+.err{color:#ef4444}

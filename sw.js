@@ -1,9 +1,8 @@
-const CACHE = 'quitcounter-v3';
+const CACHE = 'quitcounter-v4';
 const ASSETS = [
   './',
   './index.html',
   './styles.css',
-  './app.js',
   './manifest.webmanifest',
   './assets/icon-192.png',
   './assets/icon-512.png'
