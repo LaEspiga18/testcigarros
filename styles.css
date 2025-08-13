@@ -19,3 +19,4 @@ footer{text-align:center;color:var(--muted);font-size:12px}
 .timer{font-variant-numeric:tabular-nums}
 .ok{color:#10b981}
 .err{color:#ef4444}
+pre#err{white-space:pre-wrap;background:#1f2937;border:1px solid rgba(255,255,255,.1);padding:8px;border-radius:8px;margin-top:8px}

@@ -1,4 +1,4 @@
-const CACHE = 'quitcounter-v4';
+const CACHE = 'quitcounter-v5';
 const ASSETS = [
   './',
   './index.html',
