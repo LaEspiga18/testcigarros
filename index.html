@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+  <meta name="theme-color" content="#10b981"/>
+  <link rel="manifest" href="./manifest.webmanifest"/>
+  <link rel="icon" href="./assets/icon-192.png"/>
+  <link rel="apple-touch-icon" href="./assets/icon-192.png"/>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="QuitCounter">
+  <title>QuitCounter — 9/día con hucha semanal</title>
+  <link rel="stylesheet" href="./styles.css"/>
+</head>
+<body>
+  <div class="app">
+    <div class="card row">
+      <div>
+        <h1>QuitCounter</h1>
+        <small>9/día → los no fumados pasan a la hucha semanal. Lunes 00:00 se reinicia la hucha.</small>
+      </div>
+      <div class="row" style="justify-content:end;gap:8px">
+        <button id="install" class="btn install" style="display:none">Instalar</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="row" style="align-items:center">
+        <div class="center">
+          <div>
+            <div>Consumidos hoy</div>
+            <div id="count" class="big">0</div>
+          </div>
+        </div>
+        <div class="center">
+          <div>
+            <div>Restantes hoy</div>
+            <div id="remaining" class="big">9</div>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top:10px">
+        <progress id="bar" value="0" max="100"></progress>
+      </div>
+      <div class="row" style="margin-top:12px">
+        <button id="minus" class="btn ghost">−1</button>
+        <button id="plus" class="btn">+1</button>
+      </div>
+      <div class="row" style="margin-top:10px">
+        <button id="closeDay" class="btn ghost">Cerrar día ahora</button>
+        <button id="resetWeek" class="btn ghost">Vaciar hucha (forzar)</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="row" style="align-items:center">
+        <div>
+          <div>Hucha semanal</div>
+          <div id="bank" class="big">0</div>
+        </div>
+        <div>
+          <div class="badge"><span>Reinicio diario en</span> <span id="dayTimer" class="timer">00:00:00</span></div>
+          <div class="badge" style="margin-top:8px"><span>Reinicio semanal en</span> <span id="weekTimer" class="timer">00:00:00</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="row" style="align-items:center">
+        <div>
+          <label>Cuota diaria</label>
+          <input id="quotaInput" type="number" min="1" max="99" value="9"/>
+        </div>
+        <div style="align-self:end;display:flex;justify-content:flex-end">
+          <button id="saveCfg" class="btn">Guardar</button>
+        </div>
+      </div>
+      <small>Nota: la hucha se resetea automáticamente cuando cambia la semana (lunes 00:00). El traspaso diario se hace al llegar las 00:00 o al pulsar “Cerrar día ahora”.</small>
+    </div>
+
+    <footer>Funciona offline e instalable (PWA). Sube esta carpeta a GitHub Pages.</footer>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>

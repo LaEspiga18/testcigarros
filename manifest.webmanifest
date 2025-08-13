@@ -1,0 +1,22 @@
+{
+  "name": "QuitCounter — 9/día con hucha semanal",
+  "short_name": "QuitCounter",
+  "description": "Cuenta cigarrillos diarios (9) y pasa los no fumados a una hucha semanal. Offline e instalable.",
+  "start_url": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#030712",
+  "theme_color": "#10b981",
+  "icons": [
+    {
+      "src": "assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
